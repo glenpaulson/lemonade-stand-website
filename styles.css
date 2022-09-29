@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #cfcfcf;
+}
+
+#hero-section{
+    height: 100vh;
+    background-color: #FC8A05;
+}
+#about-us{
+    height: 100vh;
+    background-color: #000000;
+}
+
+#contact{
+    height: 100vh;
+    background-color: #FC8A05;
+}
