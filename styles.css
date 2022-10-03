@@ -11,6 +11,63 @@ body {
     height: 100vh;
     background-color: #FC8A05;
 }
+
+/* nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+} */
+
+/* .nav-links{
+  flex: 1;
+  text-align: right;
+  background-color: teal;
+  padding: 1.5% 5%;
+} */
+
+nav{
+  background-color: gray;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  /* background-color: brown; */
+
+}
+
+.nav-links ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.hero-title{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+
+.title-one{
+  font-size: 220px;
+  color: white;
+}
+
 #about-us{
     height: 100vh;
     background-color: #000000;
