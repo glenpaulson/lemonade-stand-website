@@ -126,12 +126,10 @@ nav a {
 .products-grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 20px;
-  /* background: gray; */
+  padding: 0px;
 }
 .grid-item {
   padding: 20px;
-
   text-align: center;
   transition: 0.5s;
 }
@@ -142,6 +140,16 @@ nav a {
 
 .grid-item img {
   width: 50%;
+}
+
+.grid-item img:hover {
+  cursor: pointer;
+}
+
+.grid-item p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
 }
 
 /* -------------------------------------------------------Contact Section-------------------------------------------- */
