@@ -10,7 +10,6 @@ body {
 
 .row {
   display: flex;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +76,7 @@ nav a {
 /* -------------------------------------------------------About Us Section-------------------------------------------- */
 
 .about-us {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: #000000;
   display: flex;
   align-items: center;
@@ -97,16 +96,32 @@ nav a {
   font-size: 16px;
   text-align: center;
 }
-/* .about-us {
-  margin: auto;
-  text-align: center;
-} */
 
 /* -------------------------------------------------------Our Products Section-------------------------------------------- */
 
 .our-products {
-  height: 100vh;
   background-color: #fc8a05;
+}
+
+.products-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+}
+
+.products-col {
+  flex-basis: 30%;
+  /* background: gray; */
+  text-align: center;
+}
+
+.products-col img {
+  width: 50%;
 }
 
 /* -------------------------------------------------------Contact Section-------------------------------------------- */
