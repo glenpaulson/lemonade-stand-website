@@ -1,61 +1,62 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #cfcfcf;
 }
 
-#hero-section{
-    height: 100vh;
-    background-color: #FC8A05;
-}
-
-/* nav{
+.row {
+  display: flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: gray;
-} */
-
-/* .nav-links{
-  flex: 1;
-  text-align: right;
-  background-color: teal;
-  padding: 1.5% 5%;
-} */
-
-nav{
-  background-color: gray;
+  color: white;
+  height: 100%;
+  width: 80%;
+  /* background: #cfcfcf; */
 }
 
-nav a{
+/* -------------------------------------------------------Hero Section-------------------------------------------- */
+
+.hero-section {
+  min-height: 100vh;
+  background-color: #fc8a05;
+}
+
+/* nav {
+  background-color: gray;
+} */
+
+nav a {
   text-decoration: none;
   color: white;
+  /* background-color: aqua; */
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-between;
   padding: 2% 6%;
+  /* background-color: gray; */
 }
 
-.nav-links ul li{
+.nav-links ul li {
   list-style: none;
   display: inline-block;
   /* background-color: brown; */
-
+  padding-right: 10px;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
   text-decoration: none;
   color: white;
 }
 
-.hero-title{
+.hero-title {
   width: 100%;
   height: 100%;
   display: flex;
@@ -64,35 +65,53 @@ nav a{
   /* background-color: yellow; */
 }
 
-.title-one{
+.title-one {
+  font-size: 220px;
+  color: white;
+}
+.title-two {
   font-size: 220px;
   color: white;
 }
 
-#about-us{
-    height: 100vh;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* -------------------------------------------------------About Us Section-------------------------------------------- */
 
-.about-us-flex-wrapper{
+.about-us {
+  min-height: 100vh;
+  background-color: #000000;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  color: white;
-  height: 100%;
-  width: 70%;
+  justify-content: center;
 }
 
-#our-products{
+.about-us-col {
+  flex-basis: 30%;
+}
+
+.about-us-col h1 {
+  text-align: center;
+}
+
+.about-us-col p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+/* .about-us {
+  margin: auto;
+  text-align: center;
+} */
+
+/* -------------------------------------------------------Our Products Section-------------------------------------------- */
+
+.our-products {
   height: 100vh;
-  background-color: #FC8A05;
+  background-color: #fc8a05;
 }
 
-#contact{
-    height: 100vh;
-    background-color: #000000;
+/* -------------------------------------------------------Contact Section-------------------------------------------- */
+
+.contact {
+  height: 100vh;
+  background-color: #000000;
 }
