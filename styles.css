@@ -179,3 +179,41 @@ nav a {
   align-items: center;
   justify-content: space-around;
 }
+
+/* -------------------------------------------------------Footer Section-------------------------------------------- */
+#footer-section {
+  height: 10vh;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  margin: auto;
+}
+
+.footer-row {
+  /* width: 80%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fc8a05;
+}
+
+.footer-nav-links {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 2% 6%; */
+  padding: 2% 0%;
+  /* background-color: gray; */
+}
+
+.footer-nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  /* background-color: brown; */
+  padding-right: 10px;
+}
+
+.footer-nav-links ul li a {
+  text-decoration: none;
+  color: white;
+}
