@@ -21,7 +21,7 @@ body {
 
 /* -------------------------------------------------------Hero Section-------------------------------------------- */
 
-.hero-section {
+#hero-section {
   min-height: 100vh;
   background-color: #fc8a05;
 }
@@ -75,8 +75,8 @@ nav a {
 
 /* -------------------------------------------------------About Us Section-------------------------------------------- */
 
-.about-us {
-  min-height: 80vh;
+#about-us {
+  min-height: 100vh;
   background-color: #000000;
   display: flex;
   flex-direction: row;
@@ -85,32 +85,32 @@ nav a {
 }
 
 .about-us-col {
-  flex-basis: 30%;
+  flex-basis: 25%;
 }
 
-.about-us-col h1 {
+#about-us-col h1 {
   text-align: center;
 }
 
-.about-us-col p {
+#about-us-col p {
   margin-top: 10px;
   font-size: 16px;
   text-align: center;
 }
 
 @media (max-width: 700px) {
-  .about-us {
+  #about-us {
     flex-direction: column;
   }
 }
 
 /* -------------------------------------------------------Our Products Section-------------------------------------------- */
 
-.our-products {
+#our-products {
   background-color: #fc8a05;
   margin: auto;
   text-align: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 .products-grid-wrapper {
@@ -154,7 +154,7 @@ nav a {
 
 /* -------------------------------------------------------Contact Section-------------------------------------------- */
 
-.contact {
+#contact {
   height: 100vh;
   background-color: #000000;
 }
