@@ -11,7 +11,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: white;
   height: 100%;
@@ -157,4 +157,25 @@ nav a {
 #contact {
   height: 100vh;
   background-color: #000000;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+.contact-col {
+  flex-basis: 30%;
+  /* background: #fc8a05; */
+}
+
+.social-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
