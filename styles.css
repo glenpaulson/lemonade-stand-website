@@ -87,16 +87,25 @@ nav a:hover {
   /* background-color: yellow; */
 }
 
-.title-one {
+#title-one {
   font-size: 220px;
   color: white;
   font-weight: 900;
   letter-spacing: 30px;
   /* transform: translateX(-150px); */
+  position: relative;
+  /* top: 0;
+  left: 0; */
 }
-.title-two {
+#title-two {
   font-size: 220px;
   color: white;
+  position: relative;
+}
+.hero-sub-container-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-sub-container-two {
@@ -122,11 +131,23 @@ nav a:hover {
 
 #orange-slice-2 {
   position: absolute;
-  top: 650;
+  /* top: 650; */
+  top: 580;
   right: 30%;
   z-index: 12;
   width: 300px;
 }
+
+/* @media (max-width: 1920px) {
+  #orange-slice-2 {
+    right: 30%;
+  }
+}
+@media (min-width: 1921px) {
+  #orange-slice-2 {
+    right: 45%;
+  }
+} */
 
 .rotate {
   animation: rotation 10s infinite linear;

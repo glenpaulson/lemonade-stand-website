@@ -23,8 +23,8 @@
     <!-- --------------------------------------------------Hero Section------------------------------------- -->
     <section id="hero-section">
       <div class="hero-title">
-        <div>
-          <span class="title-one">SQUISH </span>
+        <div class="hero-sub-container-one">
+          <span id="title-one">SQUISH </span>
         </div>
         <div class="hero-sub-container-two">
           <img
@@ -40,7 +40,7 @@
             alt=""
           />
 
-          <span class="title-two">IT</span>
+          <span id="title-two">IT</span>
         </div>
       </div>
     </section>
@@ -156,11 +156,15 @@
       // }
 
       let orange_slice_1 = document.getElementById("orange-slice-1");
+      let titleOne = document.getElementById("title-one");
+      let titleTwo = document.getElementById("title-two");
 
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
         // about_us.style.backgroundImage.transform.translateY =
         //   value * 0.5 + "px";
+        titleOne.style.right = value * 1 + "px";
+        titleTwo.style.left = value * 1 + "px";
         orange_slice_1.style.transform =
           "rotate(" + window.pageYOffset / 2 + "deg)";
       });
