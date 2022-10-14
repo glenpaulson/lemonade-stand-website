@@ -25,7 +25,7 @@
       <img
         src="assets/img/orange-slice.png"
         id="orange-slice-1"
-        class="rotate"
+        class=""
         alt=""
       />
       <img
@@ -143,5 +143,15 @@
         </div>
       </div>
     </section>
+    <script>
+      let orange_slice_1 = document.getElementById("orange-slice-1");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        // orange_slice_1.style.left = value * 1.25 + "px";
+        orange_slice_1.style.transform =
+          "rotate(" + window.pageYOffset / 2 + "deg)";
+      });
+    </script>
   </body>
 </html>
