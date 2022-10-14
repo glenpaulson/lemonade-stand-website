@@ -22,16 +22,12 @@ body {
   /* background: #cfcfcf; */
 }
 
-/* -------------------------------------------------------Hero Section-------------------------------------------- */
-
-#hero-section {
-  min-height: 100vh;
-  background-color: #fc8a05;
-}
+/* -------------------------------------------------------Nav Section-------------------------------------------- */
 
 nav {
   position: sticky;
   top: 0;
+  z-index: 11;
 }
 
 nav a {
@@ -72,12 +68,22 @@ nav a:hover {
   font-weight: 500;
 }
 
+/* -------------------------------------------------------Hero Section-------------------------------------------- */
+
+#hero-section {
+  max-height: 100vh;
+  background-color: #fc8a05;
+  /* fix me */
+  margin-top: -109px;
+}
+
 .hero-title {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
   /* background-color: yellow; */
 }
 
@@ -93,25 +99,35 @@ nav a:hover {
   color: white;
 }
 
-#orange-slice-1 {
+.hero-sub-container-two {
+  display: flex;
+  flex: row;
+  align-items: center;
+  /* background-color: #e7e7e7; */
+}
+
+/* #orange-slice-1 {
   position: absolute;
   top: 400;
-  /* left: 1250; */
-  /* right: 400px; */
   right: 20%;
   z-index: 11;
-  transition: 1s;
+  transition: 0.03s;
+} */
+
+#orange-slice-1 {
+  position: relative;
+  z-index: 11;
+  transition: 0.03s;
 }
 
 #orange-slice-2 {
   position: absolute;
   top: 650;
-  /* left: 1200; */
-  /* right: 600px; */
   right: 30%;
   z-index: 12;
   width: 300px;
 }
+
 .rotate {
   animation: rotation 10s infinite linear;
 }
@@ -138,6 +154,10 @@ nav a:hover {
   background-position: center;
   background-size: cover;
 }
+
+/* #about-us img {
+} */
+
 .about-us-col {
   flex-basis: 25%;
 }
@@ -194,6 +214,11 @@ nav a:hover {
 
 .grid-item img {
   width: 50%;
+  transition: 1s;
+}
+
+.grid-item:hover img {
+  animation: rotation 10s infinite linear;
 }
 
 .grid-item img:hover {

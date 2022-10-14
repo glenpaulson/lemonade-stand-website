@@ -22,21 +22,26 @@
     </nav>
     <!-- --------------------------------------------------Hero Section------------------------------------- -->
     <section id="hero-section">
-      <img
-        src="assets/img/orange-slice.png"
-        id="orange-slice-1"
-        class=""
-        alt=""
-      />
-      <img
-        src="assets/img/orange-slice.png"
-        id="orange-slice-2"
-        class="rotate"
-        alt=""
-      />
       <div class="hero-title">
-        <span class="title-one">SQUISH </span>
-        <span class="title-two">IT</span>
+        <div>
+          <span class="title-one">SQUISH </span>
+        </div>
+        <div class="hero-sub-container-two">
+          <img
+            src="assets/img/orange-slice.png"
+            id="orange-slice-2"
+            class="rotate"
+            alt=""
+          />
+          <img
+            src="assets/img/orange-slice.png"
+            id="orange-slice-1"
+            class="rotate"
+            alt=""
+          />
+
+          <span class="title-two">IT</span>
+        </div>
       </div>
     </section>
 
@@ -144,11 +149,18 @@
       </div>
     </section>
     <script>
+      // function getHeight() {
+      //   divElement = document.querySelector(".nav-links");
+
+      //   elemHeight = divElement.offsetHeight;
+      // }
+
       let orange_slice_1 = document.getElementById("orange-slice-1");
 
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
-        // orange_slice_1.style.left = value * 1.25 + "px";
+        // about_us.style.backgroundImage.transform.translateY =
+        //   value * 0.5 + "px";
         orange_slice_1.style.transform =
           "rotate(" + window.pageYOffset / 2 + "deg)";
       });
