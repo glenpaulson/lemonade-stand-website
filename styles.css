@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #cfcfcf;
+  background-color: #fc8a05;
 }
 
 .row {
@@ -31,7 +31,7 @@ body {
 
 nav {
   position: sticky;
-  top: 20px;
+  top: 0;
 }
 
 nav a {
