@@ -100,7 +100,7 @@ nav a:hover {
   /* right: 400px; */
   right: 20%;
   z-index: 11;
-  transition: 0.57s;
+  transition: 1s;
 }
 
 #orange-slice-2 {
@@ -134,8 +134,10 @@ nav a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-image: url(assets/img/backdrop.png);
+  background-position: center;
+  background-size: cover;
 }
-
 .about-us-col {
   flex-basis: 25%;
 }
