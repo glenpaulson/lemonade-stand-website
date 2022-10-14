@@ -241,6 +241,7 @@ nav a:hover {
   color: white;
   width: 100%;
   margin: auto;
+  bottom: 0;
 }
 
 .footer-row {
