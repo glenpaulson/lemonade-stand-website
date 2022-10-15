@@ -100,6 +100,7 @@ nav a:hover {
 }
 #title-two {
   font-size: 220px;
+  font-family: "Londrina Outline", cursive;
   color: white;
   position: relative;
   transition: 0.7s;
