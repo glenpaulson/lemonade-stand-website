@@ -109,11 +109,10 @@ nav a:hover {
 @media (max-width: 700px) {
   #about-us {
     padding: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
   .about-us-row {
     flex-direction: column;
-  }
-  .about-us-col {
-    flex-basis: 20%;
   }
 }
