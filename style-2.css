@@ -116,6 +116,71 @@ nav a:hover {
   }
 }
 
+/* -------------------------------------------------------Our Products Section-------------------------------------------- */
+
+#our-products {
+  background-color: #fc8a05;
+  margin: auto;
+  text-align: center;
+  /* min-height: 100vh; */
+}
+
+.products-grid-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #cfcfcf; */
+}
+
+.products-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.grid-item:hover {
+  transform: translateY(-20px);
+}
+
+.grid-item img {
+  width: 50%;
+  transition: 1s;
+}
+
+.grid-item:hover img {
+  animation: rotation 10s infinite linear;
+}
+
+.grid-item img:hover {
+  cursor: pointer;
+}
+
+.grid-item p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .products-grid-wrapper {
+    padding: 10% 0;
+  }
+  .products-grid-container {
+    grid-template-columns: auto;
+  }
+  .grid-item img {
+    max-width: 20%;
+    transition: 1s;
+  }
+}
+
 /* -------------------------------------------------------Contact Section-------------------------------------------- */
 
 #contact {
