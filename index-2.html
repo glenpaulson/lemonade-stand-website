@@ -157,24 +157,17 @@
     </section>
 
     <script>
-      // function getHeight() {
-      //   divElement = document.querySelector(".nav-links");
-
-      //   elemHeight = divElement.offsetHeight;
-      // }
-
-      let orange_slice_1 = document.getElementById("orange-slice-1");
+      // let orange_slice_1 = document.getElementById("orange-slice-1");
       let titleOne = document.getElementById("title-one");
       let titleTwo = document.getElementById("title-two");
 
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
-        // about_us.style.backgroundImage.transform.translateY =
-        //   value * 0.5 + "px";
-        titleOne.style.right = value * 1 + "px";
-        titleTwo.style.left = value * 1 + "px";
-        orange_slice_1.style.transform =
-          "rotate(" + window.pageYOffset / 2 + "deg)";
+
+        titleOne.style.right = value * 0.5 + "px";
+        titleTwo.style.left = value * 0.5 + "px";
+        // orange_slice_1.style.transform =
+        //   "rotate(" + window.pageYOffset / 2 + "deg)";
       });
     </script>
   </body>

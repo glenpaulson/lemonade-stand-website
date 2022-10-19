@@ -3,8 +3,7 @@
   padding: 0px;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  /* background: orange; */
-  overflow-x: hidden;
+  max-width: 100vw;
   box-sizing: border-box;
 }
 
@@ -25,6 +24,7 @@
 
 #hero-section {
   min-height: 100vh;
+  max-width: 100vw;
   background-color: #fc8a05;
   /* fix me */
   margin-top: -109px;
@@ -32,6 +32,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-title {
@@ -51,7 +52,6 @@
   transition: 0.7s;
   z-index: 15;
   width: 100%;
-  background-color: #e7e7e7;
 }
 #title-two {
   font-size: 220px;
@@ -60,7 +60,6 @@
   position: relative;
   transition: 0.7s;
   z-index: 15;
-  background-color: #e7e7e7;
 }
 .hero-sub-container-one {
   display: flex;
@@ -73,14 +72,13 @@
   flex: row;
   align-items: center;
   /* background-color: #e7e7e7; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #orange-slice-1 {
   position: relative;
   z-index: 11;
   transition: 0.03s;
-  width: 100%;
 }
 
 #orange-slice-2 {
@@ -167,7 +165,8 @@ nav a:hover {
 /* -----------------------------------------------------about-us--------------------------------------------- */
 
 #about-us {
-  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
   /* margin: auto; */
   background-color: #000000;
   min-height: 100vh;
@@ -222,6 +221,8 @@ nav a:hover {
 /* -------------------------------------------------------Our Products Section-------------------------------------------- */
 
 #our-products {
+  min-height: 100vh;
+  max-width: 100vw;
   background-color: #fc8a05;
   margin: auto;
   text-align: center;
@@ -288,6 +289,8 @@ nav a:hover {
 
 #contact {
   height: 100vh;
+  min-height: 100vh;
+  max-width: 100vw;
   background-color: #000000;
   color: white;
 }
