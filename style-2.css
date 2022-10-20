@@ -123,6 +123,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 500;
+}
+
+.sticky-bg {
+  width: 100%;
+  backdrop-filter: blur(20px);
 }
 
 nav {
