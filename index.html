@@ -55,7 +55,7 @@
     <!-- ------------------------about-us---------------------------- -->
     <section id="about-us">
       <div class="about-us-container">
-        <div class="about-us-row">
+        <div class="about-us-row reveal">
           <div class="about-us-col">
             <h3>about us</h3>
             <p>
@@ -91,7 +91,7 @@
 
     <section id="our-products">
       <!-- <h1>Our Products</h1> -->
-      <div class="products-grid-wrapper">
+      <div class="products-grid-wrapper reveal">
         <div class="products-grid-container">
           <div class="grid-item">
             <img src="assets/img/orange-slice.png" alt="" />
@@ -124,7 +124,7 @@
     <!-- --------------------------------------------------------Contact Us Section-------------------------------------- -->
 
     <section id="contact">
-      <div class="contact-row">
+      <div class="contact-row reveal">
         <div class="contact-col">
           <p>
             One of the best products I've had in my life. I drink, eat, sleep,
@@ -164,8 +164,25 @@
       </div>
     </section>
 
-    <script>
-      // let orange_slice_1 = document.getElementById("orange-slice-1");
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
       let titleOne = document.getElementById("title-one");
       let titleTwo = document.getElementById("title-two");
 
@@ -174,8 +191,6 @@
 
         titleOne.style.right = value * 0.5 + "px";
         titleTwo.style.left = value * 0.5 + "px";
-        // orange_slice_1.style.transform =
-        //   "rotate(" + window.pageYOffset / 2 + "deg)";
       });
     </script>
   </body>
