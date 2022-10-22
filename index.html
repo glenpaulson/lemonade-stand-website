@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <!-- /*important to make the website responsive*/ -->
-    <link rel="stylesheet" href="styles.css" />
-    <title>lemonade stand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lemonade Stand</title>
+    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,16 +13,19 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="nav-links">
-        <a href="#hero-section">lemonade stand</a>
-        <ul>
-          <li><a href="#about-us">about</a></li>
-          <li><a href="#our-products">products</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header class="sticky-bg">
+      <nav>
+        <div class="nav-links">
+          <a href="#hero-section">lemonade stand</a>
+          <ul>
+            <li><a href="#about-us">about</a></li>
+            <li><a href="#our-products">products</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <!-- --------------------------------------------------Hero Section------------------------------------- -->
     <section id="hero-section">
       <div class="hero-title">
@@ -48,35 +51,37 @@
       </div>
     </section>
 
-    <!-- --------------------------------------------------------About-Us Section-------------------------------------- -->
+    <!-- ------------------------about-us---------------------------- -->
     <section id="about-us">
-      <div class="about-us-row">
-        <div class="about-us-col">
-          <h1 style="color: white">about us</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-        </div>
-        <div class="about-us-col">
-          <h1 style="color: white">freshly squeezed</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-        </div>
-        <div class="about-us-col">
-          <h1 style="color: white">a call away</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
+      <div class="about-us-container">
+        <div class="about-us-row">
+          <div class="about-us-col">
+            <h3>about us</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div class="about-us-col">
+            <h3>freshly squeezed</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div class="about-us-col">
+            <h3>a call away</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -152,25 +157,19 @@
         </div>
       </div>
     </section>
+
     <script>
-      // function getHeight() {
-      //   divElement = document.querySelector(".nav-links");
-
-      //   elemHeight = divElement.offsetHeight;
-      // }
-
-      let orange_slice_1 = document.getElementById("orange-slice-1");
+      // let orange_slice_1 = document.getElementById("orange-slice-1");
       let titleOne = document.getElementById("title-one");
       let titleTwo = document.getElementById("title-two");
 
       window.addEventListener("scroll", function () {
         let value = window.scrollY;
-        // about_us.style.backgroundImage.transform.translateY =
-        //   value * 0.5 + "px";
-        titleOne.style.right = value * 1 + "px";
-        titleTwo.style.left = value * 1 + "px";
-        orange_slice_1.style.transform =
-          "rotate(" + window.pageYOffset / 2 + "deg)";
+
+        titleOne.style.right = value * 0.5 + "px";
+        titleTwo.style.left = value * 0.5 + "px";
+        // orange_slice_1.style.transform =
+        //   "rotate(" + window.pageYOffset / 2 + "deg)";
       });
     </script>
   </body>
