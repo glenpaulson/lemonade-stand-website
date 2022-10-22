@@ -414,6 +414,15 @@ nav .fa {
   /* background: #fc8a05; */
 }
 
+.testimonial-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .social-icon-wrapper {
   display: flex;
   flex-direction: row;
