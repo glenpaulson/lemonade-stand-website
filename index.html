@@ -12,17 +12,27 @@
       href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="sticky-bg">
       <nav>
         <div class="nav-links">
+          <!-- <i class="fa fa-close" onclick="hideMenu()"></i> -->
+          <i class="fa fa-bars" onclick="toggleMenu()"></i>
           <a href="#hero-section">lemonade stand</a>
-          <ul>
-            <li><a href="#about-us">about</a></li>
-            <li><a href="#our-products">products</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
+
+          <div id="nav-links-sub">
+            <i class="fa fa-close"></i>
+            <ul>
+              <li><a href="#about-us">about</a></li>
+              <li><a href="#our-products">products</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -192,6 +202,22 @@
         titleOne.style.right = value * 0.5 + "px";
         titleTwo.style.left = value * 0.5 + "px";
       });
+
+      var x = document.getElementById("nav-links-sub");
+      function toggleMenu() {
+        if (x.style.left === "-200px") {
+          x.style.left = "0";
+        } else {
+          x.style.display = "-200px";
+        }
+      }
+      // var navLinks = document.getElementById("nav-links-sub");
+      // function showMenu() {
+      //   navLinks.style.left = "0";
+      // }
+      // function hideMenu() {
+      //   navLinks.style.left = "-200px";
+      // }
     </script>
   </body>
 </html>
