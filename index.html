@@ -26,7 +26,6 @@
           <a href="#hero-section">lemonade stand</a>
 
           <div id="nav-links-sub">
-            <i class="fa fa-close"></i>
             <ul>
               <li><a href="#about-us">about</a></li>
               <li><a href="#our-products">products</a></li>
@@ -203,14 +202,36 @@
         titleTwo.style.left = value * 0.5 + "px";
       });
 
-      var x = document.getElementById("nav-links-sub");
       function toggleMenu() {
-        if (x.style.left === "-200px") {
-          x.style.left = "0";
+        var x = document.getElementById("nav-links-sub");
+        if (x.style.left != "0px") {
+          x.style.left = "0px";
+          document.body.style.overflowY = "hidden";
         } else {
-          x.style.display = "-200px";
+          x.style.left = "-200px";
+          document.body.style.overflowY = "visible";
         }
       }
+
+      // function toggleMenu() {
+      //   var x = document.getElementById("nav-links-sub");
+      //   if (x.className === "nav-links-sub-wrapper ") {
+      //     x.className += " nav-links-sub-wrapper-on";
+      //   } else {
+      //     x.className = "nav-links-sub-wrapper";
+      //   }
+      // }
+
+      // var x = document.getElementById("nav-links-sub");
+      // function toggleMenu() {
+      //   x.classList.toggle("nav-links-sub-wrapper-on");
+      //   if (x.style.left === "-200px") {
+      //     x.style.left = "0";
+      //   } else {
+      //     x.style.display = "-200px";
+      //   }
+      // }
+
       // var navLinks = document.getElementById("nav-links-sub");
       // function showMenu() {
       //   navLinks.style.left = "0";

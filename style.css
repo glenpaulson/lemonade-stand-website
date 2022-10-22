@@ -137,6 +137,21 @@
   }
 } */
 
+@media (max-width: 1200px) {
+  #orange-slice-1 {
+    display: none;
+  }
+  #orange-slice-2 {
+    display: none;
+  }
+  #title-one {
+    font-size: 72px;
+  }
+  #title-two {
+    font-size: 72px;
+  }
+}
+
 @media (max-width: 700px) {
   #orange-slice-1 {
     display: none;
@@ -229,23 +244,27 @@ nav .fa {
   }
   .nav-links ul li {
     display: block;
-    background-color: #686868;
-    text-align: center;
+    /* background-color: #686868; */
+    text-align: left;
+    padding: 5px 50px;
   }
+
   #nav-links-sub {
+    left: -200px;
     text-align: right;
     margin-top: 70px;
     position: absolute;
-    left: -200px;
-    background: #adadad;
     height: 100vh;
     width: 30%;
-    /* left: -200px; */
-    /* width: 100%; */
-    text-align: left;
-    /* z-index: 2; */
+    background: rgba(255, 81, 0, 0);
+    backdrop-filter: blur(3px);
     transition: 1s;
   }
+  /* .nav-links-sub-wrapper-on {
+    display: none;
+    transition: 1s;
+    text-align: left;
+  } */
 }
 
 /* -----------------------------------------------------about-us--------------------------------------------- */
