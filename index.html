@@ -178,7 +178,10 @@
       </div>
     </section>
 
+    <!-- --------------------------------------------------------JS Section-------------------------------------- -->
+
     <script type="text/javascript">
+      // adding scroll on reveal animation - add ref
       window.addEventListener("scroll", reveal);
 
       function reveal() {
@@ -197,6 +200,8 @@
         }
       }
 
+      //adding parallax effect to the hero section title
+
       let titleOne = document.getElementById("title-one");
       let titleTwo = document.getElementById("title-two");
 
@@ -206,6 +211,8 @@
         titleOne.style.right = value * 0.5 + "px";
         titleTwo.style.left = value * 0.5 + "px";
       });
+
+      //adding responsive nav for mobile screens
 
       function toggleMenu() {
         var x = document.getElementById("nav-links-sub");
