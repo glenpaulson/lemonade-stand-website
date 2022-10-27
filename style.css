@@ -131,6 +131,12 @@ nav .fa {
   .sticky-bg {
     backdrop-filter: none;
   }
+  .nav-links .hero-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-links ul li {
     display: block;
     text-align: left;
