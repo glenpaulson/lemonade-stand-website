@@ -207,13 +207,13 @@ nav .fa {
   align-items: center;
 }
 
-#orange-slice-1 {
+#orange-slice-2 {
   position: relative;
   z-index: 11;
   transition: 0.03s;
 }
 
-#orange-slice-2 {
+#orange-slice-1 {
   position: absolute;
   width: 300px;
   bottom: 15%;
@@ -221,7 +221,7 @@ nav .fa {
 }
 
 @media (min-width: 1100px) and (max-width: 1200px) {
-  #orange-slice-1 {
+  #orange-slice-2 {
     width: 450px;
   }
 
@@ -234,10 +234,10 @@ nav .fa {
 }
 
 @media only screen and (min-width: 920px) and (max-width: 1100px) {
-  #orange-slice-1 {
+  #orange-slice-2 {
     width: 250px;
   }
-  #orange-slice-2 {
+  #orange-slice-1 {
     width: 150px;
     bottom: 34%;
   }
@@ -250,10 +250,10 @@ nav .fa {
 }
 
 @media (max-device-width: 920px) {
-  #orange-slice-1 {
+  #orange-slice-2 {
     display: none;
   }
-  #orange-slice-2 {
+  #orange-slice-1 {
     display: none;
   }
   #title-one {
@@ -265,10 +265,10 @@ nav .fa {
 }
 
 @media (max-width: 700px) {
-  #orange-slice-1 {
+  #orange-slice-2 {
     display: none;
   }
-  #orange-slice-2 {
+  #orange-slice-1 {
     display: none;
   }
   #title-one {
