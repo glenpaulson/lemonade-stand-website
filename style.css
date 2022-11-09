@@ -196,9 +196,7 @@ nav .fa {
   z-index: 15;
 }
 .hero-sub-container-one {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: transparent;
 }
 
 .hero-sub-container-two {
